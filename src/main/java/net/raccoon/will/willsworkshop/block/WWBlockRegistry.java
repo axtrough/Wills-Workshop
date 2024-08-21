@@ -24,8 +24,6 @@ public class WWBlockRegistry {
     public static final DeferredBlock<Block> RAW_ENZORITE_BLOCK = BLOCKS.register("raw_enzorite_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK).sound(SoundType.ANCIENT_DEBRIS)));
     public static final DeferredBlock<Block> DEEPSLATE_ENZORITE_ORE = BLOCKS.register("deepslate_enzorite_ore", () -> new DropExperienceBlock(UniformInt.of(3, 7), BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE).strength(4.5f).requiresCorrectToolForDrops()));
 
-
-
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn =BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);

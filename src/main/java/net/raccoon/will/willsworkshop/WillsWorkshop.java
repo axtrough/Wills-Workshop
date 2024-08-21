@@ -55,7 +55,7 @@ public class WillsWorkshop {
         NeoForge.EVENT_BUS.register(this);
 
         WWItemRegistry.register(modEventBus);
-        WWBlockRegistry.register(modEventBus);
+
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);

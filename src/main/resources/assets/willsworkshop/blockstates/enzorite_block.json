@@ -1,7 +1,7 @@
 {
   "variants": {
     "": {
-      "model": "willsplayground:block/enzorite_block"
+      "model": "willsworkshop:block/enzorite_block"
     }
   }
 }
