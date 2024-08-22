@@ -2,6 +2,7 @@ package net.raccoon.will.willsworkshop;
 
 import net.raccoon.will.willsworkshop.block.WWBlockRegistry;
 import net.raccoon.will.willsworkshop.item.WWItemRegistry;
+import net.raccoon.will.willsworkshop.misc.WWCreativeTab;
 import org.slf4j.Logger;
 
 import com.mojang.logging.LogUtils;
@@ -54,8 +55,12 @@ public class WillsWorkshop {
         // Do not add this line if there are no @SubscribeEvent-annotated functions in this class, like onServerStarting() below.
         NeoForge.EVENT_BUS.register(this);
 
+
+        WWCreativeTab.register(modEventBus);
         WWItemRegistry.register(modEventBus);
         WWBlockRegistry.register(modEventBus);
+
+
 
 
         // Register the item to a creative tab
@@ -70,16 +75,9 @@ public class WillsWorkshop {
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
-        if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(WWItemRegistry.ENZORITE);
-            event.accept(WWItemRegistry.RAW_ENZORITE);
-        }
 
-            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
-            event.accept(WWBlockRegistry.RAW_ENZORITE_BLOCK);
-            event.accept(WWBlockRegistry.ENZORITE_BLOCK);
-            event.accept(WWBlockRegistry.DEEPSLATE_ENZORITE_ORE);
-        }
+
+
     }
 
     // You can use SubscribeEvent and let the Event Bus discover methods to call
