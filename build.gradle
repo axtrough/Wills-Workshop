@@ -20,6 +20,7 @@ repositories {
     mavenLocal()
     maven { url "https://api.modrinth.com/maven" }
     maven { url "https://maven.blamejared.com" }
+}
 
 
     base {
@@ -191,4 +192,3 @@ repositories {
             downloadJavadoc = true
         }
     }
-}

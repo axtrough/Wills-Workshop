@@ -55,6 +55,7 @@ public class WillsWorkshop {
         NeoForge.EVENT_BUS.register(this);
 
         WWItemRegistry.register(modEventBus);
+        WWBlockRegistry.register(modEventBus);
 
 
         // Register the item to a creative tab
@@ -73,7 +74,8 @@ public class WillsWorkshop {
             event.accept(WWItemRegistry.ENZORITE);
             event.accept(WWItemRegistry.RAW_ENZORITE);
         }
-        if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
+
+            if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(WWBlockRegistry.RAW_ENZORITE_BLOCK);
             event.accept(WWBlockRegistry.ENZORITE_BLOCK);
             event.accept(WWBlockRegistry.DEEPSLATE_ENZORITE_ORE);
