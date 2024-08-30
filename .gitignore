@@ -12,7 +12,6 @@ out
 *.iws
 *.iml
 .idea
-src/main/java/net/raccoon/will/willsworkshop/datagen
 
 # gradle
 build
