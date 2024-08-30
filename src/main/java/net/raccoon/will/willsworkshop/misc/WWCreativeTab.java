@@ -25,10 +25,15 @@ public class WWCreativeTab {
 
                         output.accept(WWItemRegistry.ENZORITE);
                         output.accept(WWItemRegistry.RAW_ENZORITE);
+                        output.accept(WWBlockRegistry.UNTITLED_BOOK);
+
+
 
                         output.accept(WWBlockRegistry.ENZORITE_BLOCK);
                         output.accept(WWBlockRegistry.RAW_ENZORITE_BLOCK);
                         output.accept(WWBlockRegistry.DEEPSLATE_ENZORITE_ORE);
+
+
                     }).build());
 
 

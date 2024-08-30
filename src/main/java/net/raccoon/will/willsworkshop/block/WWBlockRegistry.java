@@ -19,8 +19,14 @@ public class WWBlockRegistry {
             DeferredRegister.createBlocks(WillsWorkshop.MODID);
 
     public static final DeferredBlock<Block> ENZORITE_BLOCK = registerBlock("enzorite_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.IRON_BLOCK).sound(SoundType.COPPER)));
+
     public static final DeferredBlock<Block> RAW_ENZORITE_BLOCK = registerBlock("raw_enzorite_block", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.RAW_IRON_BLOCK).sound(SoundType.ANCIENT_DEBRIS)));
+
     public static final DeferredBlock<Block> DEEPSLATE_ENZORITE_ORE = registerBlock("deepslate_enzorite_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE).strength(4.5f).requiresCorrectToolForDrops()));
+
+    public static final DeferredBlock<Block> UNTITLED_BOOK = registerBlock("untitled_book", () -> new BlockUntitledBook(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).destroyTime(0.25f).noOcclusion()));
+
+
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn =BLOCKS.register(name, block);
