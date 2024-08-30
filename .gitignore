@@ -12,6 +12,7 @@ out
 *.iws
 *.iml
 .idea
+D:/Personal\ Mods/Wills-Workshop/src/main/java/net/raccoon/will/willsworkshop/datagen
 
 # gradle
 build
@@ -24,4 +25,4 @@ runs
 run-data
 
 repo
-dir_to_ignore/datagen
+
