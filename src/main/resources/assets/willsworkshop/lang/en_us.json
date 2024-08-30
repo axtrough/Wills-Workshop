@@ -1,10 +1,13 @@
 {
   "creativetab.willsworkshop.workshop_tab": "Will's Workshop",
 
+  "item.willsworkshop.tab_logo": "Tab Logo",
   "item.willsworkshop.enzorite": "Enzorite",
   "item.willsworkshop.raw_enzorite": "Raw Enzorite",
 
   "block.willsworkshop.raw_enzorite_block": "Block of Raw Enzorite",
   "block.willsworkshop.enzorite_block": "Block of Enzorite",
-  "block.willsworkshop.deepslate_enzorite_ore": "Deepslate Enzorite Ore"
+  "block.willsworkshop.deepslate_enzorite_ore": "Deepslate Enzorite Ore",
+
+  "block.willsworkshop.untitled_book": "Untitled Book"
 }

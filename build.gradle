@@ -19,7 +19,6 @@ group = mod_group_id
 repositories {
     mavenLocal()
     maven { url "https://api.modrinth.com/maven" }
-    maven { url "https://maven.blamejared.com" }
 
 
     base {
@@ -114,8 +113,10 @@ repositories {
     }
 
     dependencies {
-        implementation("org.embeddedt:embeddium-1.21:1.0.8-beta.367+mc1.21")
         implementation("maven.modrinth:immediatelyfast:1.2.20+1.21.1-neoforge")
+        implementation("maven.modrinth:sodium:mc1.21-0.6.0-beta.1-neoforge")
+        implementation("maven.modrinth:iris:1.8.0-beta.3+1.21-neoforge")
+
         // Example optional mod dependency with JEI
         // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
         // compileOnly "mezz.jei:jei-${mc_version}-common-api:${jei_version}"
