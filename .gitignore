@@ -12,7 +12,7 @@ out
 *.iws
 *.iml
 .idea
-D:/Personal\ Mods/Wills-Workshop/src/main/java/net/raccoon/will/willsworkshop/datagen
+src/main/java/net/raccoon/will/willsworkshop/datagen
 
 # gradle
 build
