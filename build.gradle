@@ -20,6 +20,14 @@ repositories {
     mavenLocal()
     maven { url "https://api.modrinth.com/maven" }
 
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroup("software.bernie.geckolib")
+        }
+    }
+
 
     base {
         archivesName = mod_id
@@ -116,6 +124,7 @@ repositories {
         implementation("maven.modrinth:immediatelyfast:1.2.20+1.21.1-neoforge")
         implementation("maven.modrinth:sodium:mc1.21-0.6.0-beta.1-neoforge")
         implementation("maven.modrinth:iris:1.8.0-beta.3+1.21-neoforge")
+        implementation("software.bernie.geckolib:geckolib-neoforge-1.21:4.5.8")
 
         // Example optional mod dependency with JEI
         // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
