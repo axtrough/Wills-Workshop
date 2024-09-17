@@ -53,6 +53,8 @@ public class BlockUntitledBook extends HorizontalDirectionalBlock {
     protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
         builder.add(FACING);
     }
+
+    
 }
 
 
