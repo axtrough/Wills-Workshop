@@ -24,9 +24,17 @@ public class WWBlockRegistry {
 
     public static final DeferredBlock<Block> DEEPSLATE_ENZORITE_ORE = registerBlock("deepslate_enzorite_ore", () -> new Block(BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE).strength(4.5f).requiresCorrectToolForDrops()));
 
-    public static final DeferredBlock<Block> UNTITLED_BOOK = registerBlock("untitled_book", () -> new BlockUntitledBook(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).destroyTime(0.25f).noOcclusion()));
+    public static final DeferredBlock<Block> UNTITLED_BOOK_BLOCK = registerBlock("untitled_book_block", () -> new BlockUntitledBook(BlockBehaviour.Properties.ofFullCopy(Blocks.BLACK_WOOL).destroyTime(0.25f).noOcclusion()), false);
 
 
+
+    private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block, boolean registerItem) {
+        DeferredBlock<T> toReturn = BLOCKS.register(name, block);
+        if (registerItem) {
+            registerBlockItem(name, toReturn);
+        }
+        return toReturn;
+    }
 
     private static <T extends Block> DeferredBlock<T> registerBlock(String name, Supplier<T> block) {
         DeferredBlock<T> toReturn =BLOCKS.register(name, block);
