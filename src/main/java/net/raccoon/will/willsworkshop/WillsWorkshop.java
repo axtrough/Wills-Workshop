@@ -1,5 +1,10 @@
 package net.raccoon.will.willsworkshop;
 
+import net.minecraft.world.damagesource.DamageSource;
+import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.projectile.SmallFireball;
+import net.minecraft.world.phys.EntityHitResult;
 import net.raccoon.will.willsworkshop.block.WWBlockRegistry;
 import net.raccoon.will.willsworkshop.item.WWItemRegistry;
 import net.raccoon.will.willsworkshop.misc.WWCreativeTab;
@@ -56,10 +61,10 @@ public class WillsWorkshop {
         NeoForge.EVENT_BUS.register(this);
 
 
+
         WWCreativeTab.register(modEventBus);
         WWItemRegistry.register(modEventBus);
         WWBlockRegistry.register(modEventBus);
-
 
 
 
@@ -83,8 +88,8 @@ public class WillsWorkshop {
     // You can use SubscribeEvent and let the Event Bus discover methods to call
     @SubscribeEvent
     public void onServerStarting(ServerStartingEvent event) {
-
     }
+
 
     // You can use EventBusSubscriber to automatically register all static methods in the class annotated with @SubscribeEvent
     @EventBusSubscriber(modid = MODID, bus = EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
