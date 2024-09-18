@@ -26,7 +26,12 @@ repositories {
         content {
             includeGroup("software.bernie.geckolib")
         }
+        maven {
+            name = "TerraformersMC"
+            url = "https://maven.terraformersmc.com/"
+        }
     }
+
 
 
     base {
@@ -125,6 +130,10 @@ repositories {
         implementation("maven.modrinth:sodium:mc1.21-0.6.0-beta.1-neoforge")
         implementation("maven.modrinth:iris:1.8.0-beta.3+1.21-neoforge")
         implementation("software.bernie.geckolib:geckolib-neoforge-1.21:4.5.8")
+
+
+        compileOnly "dev.emi:emi-neoforge:1.1.12+1.21:api"
+        runtimeOnly "dev.emi:emi-neoforge:1.1.12+1.21"
 
         // Example optional mod dependency with JEI
         // The JEI API is declared for compile time use, while the full JEI artifact is used at runtime
