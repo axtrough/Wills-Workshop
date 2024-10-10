@@ -1,6 +1,5 @@
 <p align="center">
-<img src="https://github.com/axtrough/Wills-Workshop/blob/master/src/main/resources/logo
-transparent.png" alt="WillsWorkshop"/>
+<img src="https://github.com/axtrough/Wills-Workshop/blob/master/src/main/resources/logotransparent.png" alt="WillsWorkshop"/>
 </p>
 
 <p align="center">
